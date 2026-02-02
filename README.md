@@ -4,9 +4,9 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 
 ## 📊 Statistics
 
-- **Total Problems Solved:** 1
+- **Total Problems Solved:** 2
 - **Easy:** 1 🟢
-- **Medium:** 0 🟡
+- **Medium:** 1 🟡
 - **Hard:** 0 🔴
 
 ## 📝 Problems
@@ -14,6 +14,7 @@ My LeetCode solutions, automatically synced from [LeetCode](https://leetcode.com
 | Problem | Difficulty | Language | Date |
 |---------|-----------|----------|------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/submissions/1905359562/) | 🟢 Easy | java | 2026-02-02 |
+| [55. Jump Game](https://leetcode.com/problems/jump-game/) | 🟡 Medium | java | 2026-02-02 |
 
 ---
 
