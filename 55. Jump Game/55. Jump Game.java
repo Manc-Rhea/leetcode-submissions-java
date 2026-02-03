@@ -3,20 +3,29 @@
  * Difficulty: Medium
  * Link: https://leetcode.com/problems/jump-game/
  * Language: java
- * Date: 2026-02-02
+ * Date: 2026-02-03
  */
 
 class Solution {
+
+    boolean[] t= new boolean[10001];
+    boolean solve(int[] nums, int len,int idx)
+    {
+        if(idx==len-1)
+            return true;
+        if(t[idx]!=false)
+            return t[idx];
+        for(int i=1;i<=nums[idx];i++)
+        {
+            if(solve(nums,len,idx+i)==true)
+                return t[idx]=true;
+        }
+        return t[idx]=false;
+    }
     public boolean canJump(int[] nums) {
 
         int len= nums.length;
-        int maxReachable = 0;  //greedy
-        for(int i=0;i<len;i++)
-        {
-            if(i > maxReachable)
-                return false;
-            maxReachable= Math.max(maxReachable,i+nums[i]);
-        }
-        return true;
+        Arrays.fill(t,false);       //memo
+        return solve(nums,len,0);   //recursion+memo
     }
 }
